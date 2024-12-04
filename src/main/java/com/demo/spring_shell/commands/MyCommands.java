@@ -15,7 +15,7 @@ public class MyCommands {
     public void sayHello(
             @NotBlank
             @NotNull
-            @Size(min = 2, max = 10)
+            @Size(min = 3, max = 10)
             @Option(shortNames = 'n', longNames = "name", description = "name input") String name
     ) {
         System.out.printf("hello, %s%n", name);
