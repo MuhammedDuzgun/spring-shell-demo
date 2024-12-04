@@ -16,9 +16,10 @@ public class MyCommands {
             @NotBlank
             @NotNull
             @Size(min = 3, max = 10)
-            @Option(shortNames = 'n', longNames = "name", description = "name input") String name
+            @Option(shortNames = 'n', longNames = "name", description = "name input") String name,
+            @Option(shortNames = 's', longNames = "surname", description = "surname input") String surname
     ) {
-        System.out.printf("hello, %s%n", name);
+        System.out.printf("hello, %s%s%n", name+" ", surname);
     }
 
 }
